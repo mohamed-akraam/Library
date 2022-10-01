@@ -1,12 +1,125 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 :root {
-    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    padding: 10px 16px;
+}
+
+.appear {
+    border: 5px solid #e5e5e5;
+    border-radius: 10px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #e5e5e5;
+    color: #14213d;
+}
+
+.card h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    font-size: 1.3rem;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #14213d;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 5px;
+    position: relative;
+}
+
+button:active {
+    top: 5px;
+}
+
+.submit {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+
+}
+
+input:focus {
+    border: none;
+    box-shadow: 6px 5px #fca311
+}
+
+.disappear {
+    display: none;
+}
+
+.cards {
+    border: 2px solid #979797;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #E5E5E5;
+    font-size: 1.28rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 10px;
+    margin: 10px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; */
 }
